@@ -10,6 +10,7 @@ use Hash;
 use Mail;
 use Str;
 use Auth;
+
 class AuthController extends Controller
 {
     public function login()

@@ -8,9 +8,9 @@
       <div class="row align-items-center px-3">
         <div class="col-lg-6 text-center text-lg-left">
           <h4 class="text-white mb-4 mt-5 mt-lg-0">Gaviola, Guillermo S.  BSIT 4th Year-A</h4>
-          <h1 class="display-3 font-weight-bold text-white">
+          <h6 class="display-5 font-weight-bold text-white">
             Bachelor of Science in Information Technology - Programming
-          </h1>
+          </h6>
           <p class="text-white mb-4">
             Programming refers to a technological process for telling a computer which tasks to perform in order to solve problems. You can think of programming as a collaboration between humans and computers, in which humans create instructions for a computer to follow (code) in a language computers can understand.Jul 24, 2023
           </p>

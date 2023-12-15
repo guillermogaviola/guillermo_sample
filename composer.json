@@ -25,6 +25,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
+            "Illuminate\\Foundation\\Auth\\": "vendor/laravel/framework/src/Illuminate/Foundation/Auth/"
         }
     },
     "autoload-dev": {

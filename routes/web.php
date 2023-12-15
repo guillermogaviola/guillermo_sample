@@ -40,7 +40,8 @@ Route::get('logout', [AuthController::class, 'logout']);
 Route::group(['middleware' => 'adminuser'], function() {
 
 	Route::get('panel/dashboard', [DashboardController::class, 'dashboard']);
-
+	Route::get('panel/home/list', [DashboardController::class, 'home']);
+	Route::post('panel/home/post', [DashboardController::class, 'post']);
 
 	Route::get('panel/user/list', [UserController::class, 'user']);
 	Route::get('panel/user/add', [UserController::class, 'add_user']);
