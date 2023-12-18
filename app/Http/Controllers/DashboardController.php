@@ -14,27 +14,30 @@ class DashboardController extends Controller
     	return view('backend.dashboard');
     }
 
-    public function home()
+    public function panel_home(Request $request)
     {
     	$data['getRecord'] = HomeModel::all();
     	return view('backend.home.list', $data);
     }
-     public function post(Request $request)
+
+    public function panel_home_post(Request $request)
     {
-    	// dd($request->all());
-    	// return view('backend.home.post');
-    	if($request->add_to_update == "Add"){
 
-    		$insertRecord  =  request()->validate([
-    			'profile' => 'required'
-    		]);
+        if($request->add_to_update == "add") {
 
-			$insertRecord =  new HomeModel;
-    	}
-    	else{
-    		$insertRecord =  HomeModel::find($request->id);
-    	}
-    	$insertRecord                  =  new HomeModel;
+            $insertRecord  =  request()->validate([
+                'profile' => 'required'
+            ]);
+            
+            $insertRecord =  new HomeModel;
+
+        }else{
+            $insertRecord = HomeModel::find($request->id);
+
+        }
+
+
+    	
     	$insertRecord->your_name       = trim($request->your_name);
     	$insertRecord->work_experience = trim($request->work_experience);
     	$insertRecord->description     = trim($request->description);

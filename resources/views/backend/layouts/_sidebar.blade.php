@@ -175,7 +175,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('panel/home/list') }}">
+        <a class="nav-link collapsed" href="{{ url('panel/home') }}">
           <i class="bi bi-question-circle"></i>
           <span>Home</span>
         </a>

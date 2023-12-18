@@ -6,18 +6,14 @@
     <!-- Header Start -->
     <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
       <div class="row align-items-center px-3">
-        <div class="col-lg-6 text-center text-lg-left">
-          <h4 class="text-white mb-4 mt-5 mt-lg-0">Gaviola, Guillermo S.  BSIT 4th Year-A</h4>
-          <h6 class="display-5 font-weight-bold text-white">
-            Bachelor of Science in Information Technology - Programming
-          </h6>
-          <p class="text-white mb-4">
-            Programming refers to a technological process for telling a computer which tasks to perform in order to solve problems. You can think of programming as a collaboration between humans and computers, in which humans create instructions for a computer to follow (code) in a language computers can understand.Jul 24, 2023
-          </p>
+        <div class="col-lg-8 text-center text-lg-left">
+          <h4 class="text-white mb-4 mt-5 mt-lg-0">{{ @$getRecord[0]->your_name }}</h4>
+          <h6 class="display-5 font-weight-bold text-white">{{ @$getRecord[0]->work_experience }}</h6>
+          <p class="text-white mb-4">{{ @$getRecord[0]->description }}</p>
           <a href="" class="btn btn-secondary mt-1 py-1 px-5">Learn More</a>
         </div>
-        <div class="col-lg-6 text-center text-lg-right">
-          <img class="img-fluid mt-0" src="{{ url('front/img/received_946827039946793.jpeg') }}" alt="" />
+        <div class="col-lg-4 text-center text-lg-right">
+          <img width="100%" height="100%" class="img-fluid mt-0" src="{{ url('public/img/' .@$getRecord[0]->profile) }}" alt="" />
         </div>
       </div>
     </div>
