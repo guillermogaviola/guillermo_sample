@@ -20,6 +20,14 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::get('/' , [HomeController::class, 'home']);
+Route::get('about' , [HomeController::class, 'about']);
+Route::get('class' , [HomeController::class, 'class']);
+Route::get('teachers' , [HomeController::class, 'teachers']);
+Route::get('gallery' , [HomeController::class, 'gallery']);
+Route::get('contact' , [HomeController::class, 'contact']);
+Route::get('blog' , [HomeController::class, 'blog']);
+Route::get('single' , [HomeController::class, 'single']);
+
 
 Route::get('login' , [AuthController::class, 'login']);
 Route::post('login' , [AuthController::class, 'auth_login']);

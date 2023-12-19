@@ -23,10 +23,10 @@
           id="navbarCollapse">
           <div class="navbar-nav font-weight-bold mx-auto py-0">
             <a href="{{url('/')}}" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="class.html" class="nav-item nav-link">Classes</a>
-            <a href="team.html" class="nav-item nav-link">Teachers</a>
-            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+            <a href="{{url('about')}}" class="nav-item nav-link">About</a>
+            <a href="{{url('class')}}" class="nav-item nav-link">Classes</a>
+            <a href="{{url('teachers')}}" class="nav-item nav-link">Teachers</a>
+            <a href="{{url('gallery')}}" class="nav-item nav-link">Gallery</a>
             <div class="nav-item dropdown">
               <a
                 href="#"
@@ -35,11 +35,11 @@
                 >Pages</a
               >
               <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                <a href="{{url('blog')}}" class="dropdown-item">Blog Grid</a>
+                <a href="{{url('single')}}" class="dropdown-item">Blog Detail</a>
               </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="{{url('contact')}}" class="nav-item nav-link">Contact</a>
           </div>
           <a href="{{ url('login') }}" class="btn btn-success px-4">Login</a>
           <a href="{{ url('register') }}" style="margin-left: 8px;" class="btn btn-success px-4">Register</a>

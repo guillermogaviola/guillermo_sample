@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Municipality of Bontoc | Official Website</title>
+    <!-- <title>Municipality of Bontoc | Official Website</title> -->
+    <title>portfolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="{{ url('front/img/bontoclogonobg.png') }}" rel="icon" />
+    <!-- <link href="{{ url('front/img/bontoclogonobg.png') }}" rel="icon" /> -->
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
