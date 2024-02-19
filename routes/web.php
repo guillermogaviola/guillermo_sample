@@ -20,6 +20,8 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::get('/' , [HomeController::class, 'home']);
+
+
 Route::get('about' , [HomeController::class, 'about']);
 Route::get('class' , [HomeController::class, 'class']);
 Route::get('teachers' , [HomeController::class, 'teachers']);
